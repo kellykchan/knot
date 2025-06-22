@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knot</title>
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">knot</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <script>
+      let menuList = document.querySelector(".nav-links");
+      menuList.style.maxHeight = "0px";
+      
+      function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "300px" ;
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <main>
+      <h1>New World Mall Food Court</h1>
+      <img
+        src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/new%20world.jpg?v=1730163944031"
+        class="rest-img"
+      />
+
+      <section class="rest-about">
+        <p>
+          Queens <br />
+          Asian, Food Court <br />
+          <a
+            href="hhttps://www.google.com/maps/place/New+World+Mall/@40.7593415,-73.8291722,15z/data=!4m6!3m5!1s0x89c26011e0dc38c1:0x2c054b5606e54f7d!8m2!3d40.7593415!4d-73.8291722!16s%2Fg%2F11bzt2dhgm?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            ><em>136-20 Roosevelt Ave Flushing, NY 11354</em></a
+          >
+          <br />
+          <a href="tel:+17183530551">(718) 353-0551</a> <br />
+          <a href="https://www.yelp.com/biz/new-world-mall-food-court-flushing" target="_blank"
+            >Yelp</a
+          >
+          <br />
+        </p>
+      </section>
+
+      <section class="rest-story">
+        <h2>Story</h2>
+        <p>The New World Mall Food Court is a vibrant culinary hub in Queens, renowned 
+          for its diverse array of Asian cuisines and authentic street food experiences. 
+          With a multitude of stalls offering everything from Taiwanese bubble tea and 
+          Chinese dumplings to Korean BBQ and Vietnamese pho, the food court caters to a 
+          wide range of tastes. Diners can explore flavors from various regions, making 
+          it a popular destination for food lovers seeking fresh, flavorful dishes in a 
+          lively atmosphere, all at affordable prices. The casual setting encourages 
+          sharing and sampling, turning each visit into a delightful culinary adventure.</p>
+      </section>
+
+      <section class="rest-rec">
+        <h2>Popular</h2>
+        <div class="pop-img">
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/66.jpg?v=1730164916920"
+                alt="Pan Bao 66"
+              />
+            </div>
+            <div class="pop-back">Pan Bao 66</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/tianfu%20spicy%20wok.jpg?v=1730164923103"
+                alt="Tianfu Spicy Wok"
+              />
+            </div>
+            <div class="pop-back">Tianfu Spicy Wok</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/LXL%20Chinese%20Food(BBQ).jpg?v=1730164926541"
+                alt="LXL Chinese Food"
+              />
+            </div>
+            <div class="pop-back">LXL Chinese Food</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/a%20zhong.jpg?v=1730164930087"
+                alt="A Zhong Taiwanese Restaurant"
+              />
+            </div>
+            <div class="pop-back">A Zhong Taiwanese Restaurant</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rest-promo">
+        <h2>Promotions</h2>
+        <p>None found yet <i class="fa-solid fa-ghost"></i></p>
+      </section>
+    </main>
+  </body>
+</html>

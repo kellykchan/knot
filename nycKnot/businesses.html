@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">knot</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <script>
+      let menuList = document.querySelector(".nav-links");
+      menuList.style.maxHeight = "0px";
+      
+      function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "300px" ;
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <section class="welcome">
+      <h1>Explore Businesses</h1>
+      
+      <form class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search businesses or borough..." onkeyup="filterItems()" />
+        <button type="submit" class="red-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      
+      <ul id="results"></ul>
+      <button class="ChooseButton" onclick="chooseRandomRestaurant()">Choose for me</button>
+      <div class="filtered-results"></div>
+    </section>
+      
+      <section class="monthly-gems">
+        <h2>Trending Now</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="alimama.html">Alimama Tea</a></h3>
+            <a href="alimama.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/Taro%20Munchkins.jpg?v=1730162007586">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="nai-brother.html">Nai Brother</a></h3>
+            <a href="nai-brother.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/house%20signature%20chinese%20sauerkraut%20flavor.jpg?v=1730158868385">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="new-lake-pavilion.html">New Lake Pavilion</a></h3>
+            <a href="new-lake-pavilion.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/peking%20duck.jpg?v=1730159935217">
+            </a>
+          </div>
+        </div>
+        
+        <h2>Businesses in Manhattan</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="alimama.html">Alimama Tea</a></h3>
+            <a href="alimama.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/Taro%20Munchkins.jpg?v=1730162007586">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="bo-ky.html">Bo Ky</a></h3>
+            <a href="bo-ky.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/duck.jpg?v=1730007088451">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="burp-bowl-cafe.html">Burp Bowl Cafe</a></h3>
+            <a href="burp-bowl-cafe.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/beef.jpg?v=1730152806244">
+            </a>
+          </div>
+        </div>
+  
+        <h2>Businesses in Brooklyn</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="ipoh-kitchen.html">Ipoh Kitchen</a></h3>
+            <a href="ipoh-kitchen.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/hainanesechicken.jpg?v=1730153758333">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="nai-brother.html">Nai Brother</a></h3>
+            <a href="nai-brother.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/house%20signature%20chinese%20sauerkraut%20flavor.jpg?v=1730158868385">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="thanh-da.html">Thanh Da</a></h3>
+            <a href="thanh-da.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/House%20Special%20Banh%20Mi.jpg?v=1730160860714">
+            </a>
+          </div>
+        </div>
+        
+        <h2>Businesses in Queens</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="new-lake-pavilion.html">New Lake Pavilion</a></h3>
+            <a href="new-lake-pavilion.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/peking%20duck.jpg?v=1730159935217">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="new-world.html">New World Mall Food Court</a></h3>
+            <a href="new-world.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/66.jpg?v=1730164916920">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="wonderpig.html">Wonder Pig KBBQ</a></h3>
+            <a href="wonderpig.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/brisket.jpg?v=1730163335010">
+            </a>
+          </div>
+        </div>
+        
+        <h2>Businesses in Bronx</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="com-tam.html">Com Tam Ninh Kieu</a></h3>
+            <a href="com-tam.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/crispy%20spring%20rolls.jpg?v=1730170332612">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="kai-sushi.html">Kai Sushi Asian Fusion</a></h3>
+            <a href="kai-sushi.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/dancing%20angel%20roll.jpg?v=1730169573062">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="zhongzhong.html">Zhongzhong Noodles</a></h3>
+            <a href="zhongzhong.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/Szechuan%20Braised%20Beef%20Noodle.jpg?v=1730168784399">
+            </a> 
+          </div>
+        </div>
+        
+        <h2>Businesses in Staten Island</h2>
+        <div class="gems-grid">
+          <div class="gem-card"><h3><a href="hks-kitchen.html">HKS KITCHEN</a></h3>
+            <a href="hks-kitchen.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/pork%20chop%20noodle.jpg?v=1730166826459">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="pho-rainbow.html">Pho Rainbow 3</a></h3>
+            <a href="pho-rainbow.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/spring%20rolls%20%26%20grilled%20chicken%20rice%20vermicelli.jpg?v=1730167942934">
+            </a>
+          </div>
+          <div class="gem-card"><h3><a href="something-sweet.html">Something Sweet</a></h3>
+            <a href="something-sweet.html">
+            <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/starry%20night.jpg?v=1730170526725">
+            </a>
+          </div>
+        </div>
+        
+    </section>
+  <script src="script.js"></script>
+  </body>
+</html>

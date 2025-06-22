@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knot</title>
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">knot</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <script>
+      let menuList = document.querySelector(".nav-links");
+      menuList.style.maxHeight = "0px";
+      
+      function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "300px" ;
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    
+    <main>
+      <h1>New Lake Pavilion</h1>
+      <img
+        src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/lake.jpg?v=1730159295250"
+        class="rest-img"
+      />
+      
+      <section class="rest-about">
+        <p>
+          Queens <br />
+          Chinese <br />
+          <a href="https://www.google.com/maps/place/New+Lake+Pavilion/@40.74263,-73.8249054,15z/data=!4m2!3m1!1s0x0:0x340cf570f56be0b?sa=X&ved=1t:2428&ictx=111" target="_blank"><em>6015 Main St Flushing, NY 11355</em></a> <br />
+          <a href="tel:+17188866693">(718) 886-6693</a> <br />
+          <a href="https://www.yelp.com/biz/new-lake-pavilion-flushing?osq=new+lake+pavilion" target="_blank">Yelp</a> <br />
+        </p>
+      </section>
+      
+      <section class="rest-story">
+        <h2>Story</h2>
+        <p>New Lake Pavilion has established itself as a premier destination for authentic Chinese 
+          cuisine in Queens, NY for its dim sum, seafood, 
+          and classic Chinese dishes, drawing in diners for a rich culinary experience. 
+          Their dim sum selection includes favorites like steamed shrimp dumplings, 
+          pork buns, and rice rolls, all crafted with traditional techniques and 
+          fresh ingredients. Known for seafood specialties and signature Chinese 
+          dishes, New Lake Pavilion is a top choice for authentic flavors and 
+          expertly prepared meals.</p>
+      </section>
+      
+      <section class="rest-rec">
+  <h2>Popular</h2>
+  <div class="pop-img">
+    <div class="pop-card">
+      <div class="pop-front">
+        <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/peking%20duck.jpg?v=1730159935217" alt="Peking Duck">
+      </div>
+      <div class="pop-back">
+        Peking Duck
+      </div>
+    </div>
+    <div class="pop-card">
+      <div class="pop-front">
+        <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/crispy%20chicken.jpg?v=1730159940635" alt="Crispy Chicken">
+      </div>
+      <div class="pop-back">
+        Crispy Chicken
+      </div>
+    </div>
+    <div class="pop-card">
+      <div class="pop-front">
+        <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/alaskan%20king%20crab.jpg?v=1730159943819" alt="Alaskan King Crab">
+      </div>
+      <div class="pop-back">
+        Alaskan King Crab
+      </div>
+    </div>
+    <div class="pop-card">
+      <div class="pop-front">
+        <img src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/dim%20sum.jpg?v=1730159947952" alt="Dim Sum">
+      </div>
+      <div class="pop-back">
+        Dim Sum
+      </div>
+    </div>
+  </div>
+</section>
+      
+      <section class="rest-promo">
+        <h2>Promotions</h2>
+        <p>None found yet <i class="fa-solid fa-ghost"></i></p>
+      </section>
+      
+    </main>
+  </body>
+</html>

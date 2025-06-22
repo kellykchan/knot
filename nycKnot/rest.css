@@ -1,0 +1,263 @@
+.figtree {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* General styling */
+body {
+  font-family: "Figtree", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1efe7;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b31b1b;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  width: 100vw; /* Full viewport width */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  grid-column: 1 / -1; /* Span both columns */
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* About Section */
+.rest-about {
+  display: block;
+  grid-column: 2 / 3;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rest-img {
+  grid-column: 1 / 2;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.rest-about p {
+  font-size: 20px;
+  text-align: left;
+}
+
+/* Story, Recs, Promo Section */
+.rest-story,
+.rest-rec,
+.rest-promo {
+  grid-column: 1 / -1; /* Span both columns */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pop-img {
+  display: flex; /* Use flexbox to arrange items in a row */
+  flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
+  justify-content: flex-start; /* Distribute space evenly between items */
+  gap: 20px; /* Set gap between items */
+}
+
+.pop-card {
+  position: relative;
+  width: 200px; /* Set to your desired width */
+  height: 200px; /* Set to your desired height */
+  perspective: 1000px;
+}
+
+.pop-front,
+.pop-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Front of the card (image) */
+.pop-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px; /* Add border-radius to images */
+}
+
+/* Back of the card (text) */
+.pop-back {
+  background-color: #b31b1b; /* Set background color for the back */
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Flip the card on hover */
+.pop-card:hover .pop-front {
+  transform: rotateY(180deg);
+}
+
+.pop-card:hover .pop-back {
+  transform: rotateY(0);
+}
+
+/* Header styling */
+header {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.logo a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.logo a:hover {
+  color: #8e1414;
+}
+
+.nav-links {
+  list-style-type: none;
+  font-size: 18px;
+  display: flex;
+  float: right;
+  margin-right: 2rem;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #8e1414;
+}
+
+.menu-icon{
+  display: none;
+}
+
+.menu-icon i {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* For Smaller Screens */
+@media (max-width: 650px) {
+  nav ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    background: #000000;
+    overflow: hidden;
+    width: auto;
+  }
+  
+  nav ul li{
+    padding: 1rem;
+  }
+  
+  .menu-icon{
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+    float: right;
+    margin-right: 0;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    transition: all 0.5s;
+    margin-right: 0;
+  }
+  
+  .nav-links a:hover {
+    background-color: #8e1414;
+  }
+  
+  main {
+    grid-template-columns: 1fr; /* Change to one column */
+    gap: 10px; /* Adjust the gap as needed */
+  }
+  .rest-about,
+  .rest-story,
+  .rest-rec,
+  .rest-promo {
+    grid-column: 1 / -1; /* Ensure they span the entire single column */
+  }
+}
