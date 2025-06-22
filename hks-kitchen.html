@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knot</title>
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">knot</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <script>
+      let menuList = document.querySelector(".nav-links");
+      menuList.style.maxHeight = "0px";
+      
+      function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "300px" ;
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <main>
+      <h1>HKS KITCHEN</h1>
+      <img
+        src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/hk.jpg?v=1730166817024"
+        class="rest-img"
+      />
+
+      <section class="rest-about">
+        <p>
+          Staten Island <br />
+          Chinese <br />
+          <a
+            href="https://www.google.com/maps/place/HKS+Kitchen%E6%B8%AF%E9%A4%90%E9%A3%BD/@40.5942815,-74.098692,15z/data=!4m2!3m1!1s0x0:0x2d736e50ce02feee?sa=X&ved=1t:2428&ictx=111"
+            target="_blank"
+            ><em>1434D Richmond Rd Staten Island, NY 10304</em></a
+          >
+          <br />
+          <a href="tel:+17186686838">(718) 668-6838</a> <br />
+          <a href="https://www.yelp.com/biz/hks-kitchen-staten-island" target="_blank"
+            >Yelp</a
+          >
+          <br />
+        </p>
+      </section>
+
+      <section class="rest-story">
+        <h2>Story</h2>
+        <p>HKS Kitchen is a beloved destination for Hong Kong-inspired Chinese cuisine, 
+          known for its flavorful dishes and warm, inviting atmosphere. The menu includes 
+          popular items like pork chop noodles, HK-style milk tea, beef chow fun, and ham 
+          egg sandwiches. With its commitment to quality and authentic flavors, HKS Kitchen 
+          has become a go-to spot for those seeking a satisfying and unique dining experience 
+          in Staten Island.</p>
+      </section>
+
+      <section class="rest-rec">
+        <h2>Popular</h2>
+        <div class="pop-img">
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/pork%20chop%20noodle.jpg?v=1730166826459"
+                alt="Pork Chop Noodle"
+              />
+            </div>
+            <div class="pop-back">Pork Chop Noodle</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/hk%20style%20milk%20tea.jpg?v=1730166829227"
+                alt="Hong Kong Style Milk Tea"
+              />
+            </div>
+            <div class="pop-back">Hong Kong Style Milk Tea</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/beef%20chow%20fun.jpg?v=1730166832721"
+                alt="Beef Chow Fun"
+              />
+            </div>
+            <div class="pop-back">Beef Chow Fun</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/ham%20and%20egg%20sandwich.jpg?v=1730166839913"
+                alt="Ham and Egg Sandwich"
+              />
+            </div>
+            <div class="pop-back">Ham and Egg Sandwich</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rest-promo">
+        <h2>Promotions</h2>
+        <p>None found yet <i class="fa-solid fa-ghost"></i></p>
+      </section>
+    </main>
+  </body>
+</html>

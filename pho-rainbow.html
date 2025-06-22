@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knot</title>
+    <link rel="stylesheet" href="rest.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html">knot</a></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="businesses.html">Businesses</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <script>
+      let menuList = document.querySelector(".nav-links");
+      menuList.style.maxHeight = "0px";
+      
+      function toggleMenu() {
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "300px" ;
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <main>
+      <h1>Pho Rainbow 3</h1>
+      <img
+        src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/rainbow3.jpg?v=1730167500450"
+        class="rest-img"
+      />
+
+      <section class="rest-about">
+        <p>
+          Staten Island <br />
+          Vietnamese <br />
+          <a
+            href="https://www.google.com/maps/place/Pho+Rainbow+3/@40.5735912,-74.1164946,15z/data=!4m6!3m5!1s0x89c249530a703edf:0xb25e596c631e652d!8m2!3d40.5735912!4d-74.1164946!16s%2Fg%2F11btlw6q2f?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            ><em>42 New Dorp Plz Staten Island, NY 10306</em></a
+          >
+          <br />
+          <a href="tel:+17189871084">(718) 987-1084</a> <br />
+          <a href="https://www.yelp.com/biz/pho-rainbow-ii-staten-island-4" target="_blank"
+            >Yelp</a
+          >
+          <br />
+        </p>
+      </section>
+
+      <section class="rest-story">
+        <h2>Story</h2>
+        <p>Pho Rainbow 3 is a popular eatery known for its authentic Vietnamese cuisine, 
+          particularly its flavorful pho and fresh ingredients. The restaurant offers a 
+          diverse menu that highlights traditional Vietnamese dishes, including banh mi 
+          and spring rolls, all prepared with care and attention to detail. With its 
+          welcoming atmosphere and commitment to quality, Pho Rainbow 3 has become a 
+          favorite destination for locals seeking a taste of Vietnam in Staten Island.</p>
+      </section>
+
+      <section class="rest-rec">
+        <h2>Popular</h2>
+        <div class="pop-img">
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/spring%20rolls%20%26%20grilled%20chicken%20rice%20vermicelli.jpg?v=1730167942934"
+                alt="Spring Rolls and Grilled Chicken Rice Vermicelli"
+              />
+            </div>
+            <div class="pop-back">Spring Rolls and Grilled Chicken Rice Vermicelli</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/special%20bowl%20%26%20beef%20ball%20noodle%20beef%20soup.jpg?v=1730167971690"
+                alt="Special Bowl Noodle Soup"
+              />
+            </div>
+            <div class="pop-back">Special Bowl Noodle Soup</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/grilled%20slicked%20pork%20sandwich.jpg?v=1730167975797"
+                alt="Grilled Sliced Pork Sandwich"
+              />
+            </div>
+            <div class="pop-back">Grilled Sliced Pork Sandwich</div>
+          </div>
+          <div class="pop-card">
+            <div class="pop-front">
+              <img
+                src="https://cdn.glitch.global/32d3d790-701b-4287-b98b-157d4123b858/grilled%20pork%20chop%20rice.jpg?v=1730167979588"
+                alt="Grilled Pork Chop Rice"
+              />
+            </div>
+            <div class="pop-back">Grilled Pork Chop Rice</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rest-promo">
+        <h2>Promotions</h2>
+        <p>None found yet <i class="fa-solid fa-ghost"></i></p>
+      </section>
+    </main>
+  </body>
+</html>
